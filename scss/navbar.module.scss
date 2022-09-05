@@ -1,0 +1,28 @@
+@import './colors.scss';
+//@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+.nameClick {
+    font-size: 1rem;
+    //font-family: 'Playfair Display', serif;
+    font-family: 'Lora', serif;
+    color: $app-white;
+}
+
+.rightNavLayout {
+    //display: flex;
+    font-size: .75rem;
+}
+
+.rightNavContent {
+   color: $app-gray;
+}
+
+.border {
+    border-bottom: 1px solid $app-gray;
+}
+
+.padding {
+    padding-left: 2%;
+    padding-right: 2%;
+}
