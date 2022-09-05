@@ -1,11 +1,19 @@
 @import './colors.scss';
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Rubik+Dirt&family=Silkscreen&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 .helloText {
     font-size: 7rem;
     margin-bottom: -5rem;
     color: $app-white;
+    font-family: 'Staatliches', cursive;
+}
+
+.helloTextMobile {
+    font-size: 5rem;
+    margin-bottom: -4rem;
+    color: $app-white;
+    font-family: 'Staatliches', cursive;
 }
 
 .mainPadding{
@@ -16,11 +24,25 @@
 .iAmText {
     font-size: 7rem;
     color: $app-yellow;
+    font-family: 'Staatliches', cursive;
+    margin-bottom: -1rem;
+}
+
+.iAmTextMobile {
+    font-size: 4rem;
+    color: $app-yellow;
+    font-family: 'Staatliches', cursive;
+    margin-bottom: -1rem;
 }
 
 .descriptionText {
     color: $app-white;
-    font-size: larger;
+    font-size: 1.25rem;
+}
+
+.descriptionTextMobile {
+    color: $app-white;
+    font-size: large;
 }
 
 .imageDiv {
