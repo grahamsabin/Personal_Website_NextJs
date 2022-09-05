@@ -36,19 +36,19 @@ export default function Navbar() {
             <nav className={`navbar-menu is-hidden-desktop is-active ${styles.border}`} role="navigation" aria-label="main navigation">
                 
                     <div className={`navbar-brand`}>
-                        <a className={`navbar-item ${styles.nameClickMobile}`}>
+                        <a className={`navbar-item ${styles.nameClickMobile}`} href="/">
                             Graham Sabin
                         </a>
 
-                        <a className={`navbar-item ${styles.rightNavContentMobile}`}>
+                        <a className={`navbar-item ${styles.rightNavContentMobile}`} href="/work">
                             work,
                         </a>
 
-                        <a className={`navbar-item ${styles.rightNavContentMobile}`}>
+                        <a className={`navbar-item ${styles.rightNavContentMobile}`} href="/about">
                             about,
                         </a>
 
-                        <a className={`navbar-item ${styles.rightNavContentMobile}`}>
+                        <a className={`navbar-item ${styles.rightNavContentMobile}`} href="/contact">
                             contact
                         </a>
                     </div>
