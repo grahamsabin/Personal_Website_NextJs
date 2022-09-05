@@ -30,7 +30,7 @@ export default function LandingPage() {
 
                 <div className={`column is-5 ${style.imageMargin}`}>
                         {/* <figure className={`image is-2by3 ${style.imageMargin}`}> */}
-                            <Image src="person_image.jpg" className={`${style.imageDiv}`}/>
+                            <img src="person_image.jpg" className={`${style.imageDiv}`}/>
                         {/* </figure>   */}
                 </div>
                 

@@ -5,11 +5,10 @@ export default function Navbar() {
     return (
         <div className={`${styles.padding}`}>
             <nav className={`navbar-menu ${styles.border}`} role="navigation" aria-label="main navigation">
-                <div class="navbar-brand">
-                </div>
+                
 
-                <div id="navbarBasicExample" class="navbar-menu">
-                    <div class="navbar-brand">
+                <div id="navbarBasicExample" className={`navbar-menu`}>
+                    <div className={`navbar-brand`}>
                         <a className={`navbar-item ${styles.nameClick}`}>
                             Graham Sabin
                         </a>
