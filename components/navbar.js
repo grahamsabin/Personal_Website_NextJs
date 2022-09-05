@@ -24,12 +24,12 @@ export default function Navbar() {
                     <div className={`navbar-end ${styles.rightNavLayout}`}>
                         <Link href="/work">
                             <a className={`navbar-item ${styles.rightNavContent}`}>
-                                work,
+                                work
                             </a>
                         </Link>
                         <Link href="/about">
                             <a className={`navbar-item ${styles.rightNavContent}`}>
-                                about,
+                                about
                             </a>
                         </Link>
 
@@ -53,12 +53,12 @@ export default function Navbar() {
                         </Link>
                         <Link href="/work">
                             <a className={`navbar-item ${styles.rightNavContentMobile}`}>
-                                work,
+                                work
                             </a>
                         </Link>
                         <Link href="/about">
                             <a className={`navbar-item ${styles.rightNavContentMobile}`}>
-                                about,
+                                about
                             </a>
                         </Link>
                         <Link href="/contact">
