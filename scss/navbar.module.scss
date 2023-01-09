@@ -1,72 +1,103 @@
 @import './colors.scss';
-//@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
 
+// DESKTOP VIEW
 
+.navBorder {
+    border-bottom: .005rem solid $app-gray;
+    background-color: $app-white;
+}
 
-.nameClick {
-    font-size: 1rem;
-    //font-family: 'Playfair Display', serif;
-    font-family: 'Lora', serif;
+.initials {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 3rem;
     color: $app-white;
-    text-decoration: none;
+    transition: transform 1s;
 }
 
-
-
-
-.nameClickMobile {
-    font-size: 1rem;
-    //font-family: 'Playfair Display', serif;
-    font-family: 'Lora', serif;
+.initials:hover {
     color: $app-white;
+    transform: rotate(360deg);
 }
 
-.rightNavLayout {
-    //display: flex;
-    font-size: .75rem;
+.initialsBox {
+    background-color: $app-dark-gray;
+    width: 9rem;
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+    margin-right: 20rem;
 }
 
-.rightNavLayout:hover {
-    //display: flex;
-    background-color: $app-black;
+.initialsBox:hover {
+    transform: rotate(10deg);
 }
 
-.rightNavContent {
-   color: $app-gray;
-}
-
-
-
-.rightNavContent:hover {
-    background-color: $app-gray;
- }
-
-.leftNavContent {
+.navbarText {
+    font-family: replica, Helvetica Neue;
+    font-weight: 500;
     color: $app-gray;
-    background-color: $app-black;
-    pointer-events: none;
- }
-
-
-
-.rightNavContentMobile {
-    color: $app-gray;
-    font-size: .75rem;
- }
-
- .rightNavContentMobile:hover {
-    color: $app-white;
- }
-
-.border {
-    border-bottom: 1px solid $app-gray;
-    background-color: $app-black;
+    text-decoration-color: transparent;
+    transition: 1s;
 }
 
-.padding {
-    padding-left: 2%;
-    padding-right: 2%;
+.navbarText:hover {
+    color: $app-black;
+    text-decoration-color: $app-red;
+    text-decoration-line: underline;
+    text-underline-offset: .5rem;
 }
+
+.twitterButton {
+    border-style: solid;
+    border-width: .005rem;
+    border-color: $app-gray;
+    width: 8rem;
+    height: 3rem;
+    margin-right: 1rem;
+    background-color: $app-white;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+}
+
+.twitterButton:hover {
+    border-color: $twitter-blue;
+    border-width: .1rem;
+}
+
+.twitterButtonCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconFavicon {
+    margin-right: .75rem;
+    color: $twitter-blue;
+}
+
+.twitterButtonText{
+    color: $twitter-blue;
+    font-weight: 300;
+}
+
+
+// MOBILE VIEW
+
+.mobileNav {
+    background-color: $app-white;
+}
+
+
+
+
+
+
+
+
+
 
 

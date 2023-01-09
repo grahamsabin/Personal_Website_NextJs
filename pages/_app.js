@@ -1,6 +1,7 @@
 import '../scss/styles.scss';
 import Head from 'next/head';
 import Navbar from '../components/navbar';
+import Layout from './Layout';
 
 function MyApp({ Component, pageProps }) {
     return (
@@ -9,13 +10,29 @@ function MyApp({ Component, pageProps }) {
                 <title>Graham Sabin 🤟</title>
             </Head>
 
-            <Navbar/>
+           
 
-            <div className={`page`}>
+            <Layout>
                 <Component {...pageProps} />
-            </div>
+            </Layout>
         </div>
-    )
+    );
 }
 
 export default MyApp;
+
+// function MyApp({ Component, pageProps }) {
+//     return (
+//         <div>
+//             <Head>
+//                 <title>Graham Sabin 🤟</title>
+//             </Head>
+
+//             <Navbar/>
+
+//             <div className={`page`}>
+//                 <Component {...pageProps} />
+//             </div>
+//         </div>
+//     )
+// }

@@ -3,15 +3,23 @@
 $primary: $app-red;
 $link: $app-black;
 
+// Navbar Overrides
+    // $navbar-item-hover-color: $app-black;
+    // $navbar-item-active-color: $app-black;
+    // $navbar-tab-hover-border-bottom-color: $app-red;
+    // $navbar-tab-active-border-bottom-color: $app-red;
+
+
+
 @import 'bulma/bulma';
 
 html,
 body {
-    background-color: $app-black;
+    background-color: $app-white;
     padding: 0;
     margin: 0;
 }
 
 .page {
-    margin: 20px 15px 20px 15px;
+    //margin: 20px 15px 20px 15px;
 }
