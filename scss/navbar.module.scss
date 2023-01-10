@@ -10,7 +10,7 @@
 
 .initials {
     font-family: 'Rajdhani', sans-serif;
-    font-size: 3rem;
+    font-size: 2.9rem;
     color: $app-white;
     transition: transform 1s;
 }
@@ -22,20 +22,20 @@
 
 .initialsBox {
     background-color: $app-dark-gray;
-    width: 9rem;
+    width: 10.5vw;
     display: flex;
     justify-content: center;
     transition: 1s;
-    margin-right: 20rem;
+   // margin-right: 20rem;
+    letter-spacing: .1rem;
 }
 
 .initialsBox:hover {
-    transform: rotate(10deg);
+    //transform: rotate(10deg);
 }
 
 .navbarText {
-    font-family: replica, Helvetica Neue;
-    font-weight: 500;
+    font-weight: bold;
     color: $app-gray;
     text-decoration-color: transparent;
     transition: 1s;
@@ -47,6 +47,15 @@
     text-decoration-line: underline;
     text-underline-offset: .5rem;
 }
+
+.navOptionsDiv {
+    margin-left: 12.25vw;
+    display: flex;
+    
+    
+}
+
+//TWITTER BUTTON STYLING
 
 .twitterButton {
     border-style: solid;
@@ -89,6 +98,20 @@
 
 .mobileNav {
     background-color: $app-white;
+}
+
+.burgerIcon {
+    background-color: red;
+}
+
+.burgerSpan {
+    width: 20rem;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
