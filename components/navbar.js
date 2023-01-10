@@ -60,7 +60,7 @@ export default function Navbar() {
                             </a>
                         </Link>
 
-                        <Link href="/contact">
+                        <Link href="/jokes">
                             <a className={`navbar-item ${styles.navbarText}`}>
                                 Jokes
                             </a>
