@@ -23,3 +23,38 @@
 .introTextSpacing {
     margin: 7.5vh 23.5vw;
 }
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.jokeButton {
+    background-color: $app-light-blue;
+    color: $app-white;
+}
+
+.punchlineDoor {
+   
+    background-color: black;
+    .p1 {
+        color: white;
+    }
+    p {
+        color: transparent;
+    }
+    transition: background-color 2s;
+}
+
+.punchlineDoor:hover {
+    background-color: transparent;
+    .p1 {
+        color: transparent;
+    }
+    p {
+        color: black;
+    }
+}
+
