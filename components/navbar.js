@@ -48,7 +48,7 @@ export default function Navbar() {
                             </a>
                         </Link>
 
-                        <Link href="/contact">
+                        <Link href="/writing">
                             <a className={`navbar-item ${styles.navbarText}`}>
                                 Writing
                             </a>
