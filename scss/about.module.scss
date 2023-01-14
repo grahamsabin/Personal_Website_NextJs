@@ -1,0 +1,23 @@
+@import './colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap');
+
+.pageSetup {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.headerText {
+    font-family: 'Domine', serif;
+    font-size: 4vw;
+    color: $app-black; 
+    margin-bottom: -3vh;
+}
+
+.divideBar {
+    width: 100%;
+    height: .75vh;
+    background-color: $app-light-gray;
+    // padding: 1vh;
+}

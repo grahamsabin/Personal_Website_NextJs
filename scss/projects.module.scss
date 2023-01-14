@@ -1,53 +1,107 @@
 @import './colors.scss';
 
 
+// MEDIA VIEW FOR PC AND ABOVE
+// @media (min-width: 1025px) {
+
+    //TEXT SECTION STYLING
+
+    .introText {
+        // font-size: 2.25rem;
+        font-size: 2.5vw;
+        color: $app-black;
+        font-weight: bold;
+        // line-height: 3.5rem;
+        line-height: 7.5vh;
+        letter-spacing: .1rem;
+    }
+
+    // .introTextSpacing {
+    //     margin: 3.5rem 22.5rem;
+    // }
+
+    .introTextSpacing {
+        margin: 7.5vh 23.5vw;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blackBorder {
+        //position:absolute;
+        background-color: $app-dark-gray;
+        width: 100%;
+        height: 2.75vh;
+        //margin-top: 10vh;
+    }
+
+    .imageGrids {
+        width: 100%;
+        padding: 0;
+        height: 37vh;
+        overflow: hidden;
+
+        .overlayTextDiv {
+            position: relative;
+            width: 100%;
+            background-color: black; 
+            height: 7vh;
+            transition: 500ms;
+            opacity: 0%;
+            margin-bottom: -7vh;
+            
+            z-index:1;
+            
+            .overlayText {
+                padding-left: 1.5vw;
+                padding-top: 1vh;
+                font-size: 1.5vw;
+                font-weight: bold;
+                //text-decoration: underline;
+                color: white;
+            }
+        }
+    }
+
+    .imageGrids:hover {
+
+        .overlayTextDiv {
+            opacity: 50%;
+        }
+    }
+
+// } //END OF MEDIA VIEW ONE
 
 
 
-//TEXT SECTION STYLING
-
-.introText {
-    // font-size: 2.25rem;
-    font-size: 2.5vw;
-    color: $app-black;
-    font-weight: bold;
-    // line-height: 3.5rem;
-    line-height: 7.5vh;
-    letter-spacing: .1rem;
-}
-
-// .introTextSpacing {
-//     margin: 3.5rem 22.5rem;
-// }
-
-.introTextSpacing {
-    margin: 7.5vh 23.5vw;
-}
-
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
-// COME BACK AND CHANGE THIS FOR LATER
-// /* Styles for laptop view (viewport width >= 1024px) */
-// @media (min-width: 1024px) {
+
+// // COME BACK AND CHANGE THIS FOR LATER
+// /* Styles for tablet view  */
+// @media (max-width: 1024px) {
 //     /* Add styles here */
-//     .introText {
-//         font-size: 2.25rem;
-//         color: $app-black;
-//         font-weight: bold;
-//         line-height: 3.5rem;
-//         letter-spacing: .1rem;
+//     // .introText {
+//     //     font-size: 2.25rem;
+//     //     color: $app-black;
+//     //     font-weight: bold;
+//     //     line-height: 3.5rem;
+//     //     letter-spacing: .1rem;
+//     // }
+
+//     .blackBorder {
+//         background-color: $app-dark-gray;
+//         width: 100%;
+//         height: 1vh;
+//         //margin-top: 10vh;
 //     }
-
-
-//   }
+// }
   
-//   /* Styles for monitor view (viewport width >= 1200px) */
-//   @media (min-width: 1800px) {
+//   /* Styles for smartphone view*/
+//   @media (min-width: 480px) {
 //     /* Add styles here */
 //     .introText {
 //         font-size: 5rem;

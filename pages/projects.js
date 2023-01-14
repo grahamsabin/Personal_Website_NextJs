@@ -1,4 +1,6 @@
 import style from '../scss/projects.module.scss';
+import Link from 'next/link'
+
 
 
 export default function Projects() {
@@ -9,68 +11,77 @@ export default function Projects() {
                     I’m a developer, entrepreneur-wannabe, athlete on the weekends, and all around cool guy. Also, sometimes I'm funny.
                 </h1>
             </div>
-            
 
+            <div className={`${style.blackBorder}`}></div>
+
+            <div className={`columns is-multiline is-mobile`}>
+                <div href='/contact' className={`column is-4-desktop is-6-tablet is-12-mobile ${style.imageGrids}`}>
+                    <Link href='/jokes'>
+                        <a>
+                            <div className={`${style.overlayTextDiv}`}>
+                                <h3 className={`${style.overlayText}`}>Overlay Text</h3>    
+                            </div>  
+                            <img src="image1.jpg" alt="Image 1" className={`${style.projectImage}`}/> 
+                        </a>
+                    </Link>
+                </div>
+                <div className={`column is-4-desktop is-6-tablet is-12-mobile ${style.imageGrids}`}>
+                    <Link href='/jokes'>
+                        <a>
+                            <div className={`${style.overlayTextDiv}`}>
+                                <h3 className={`${style.overlayText}`}>Overlay Text</h3>    
+                            </div>  
+                            <img src="image1.jpg" alt="Image 1" className={`${style.projectImage}`}/> 
+                        </a>
+                    </Link>
+                </div>
+                <div className={`column is-4-desktop is-6-tablet is-12-mobile ${style.imageGrids}`}>
+                    <Link href='/jokes'>
+                        <a>
+                            <div className={`${style.overlayTextDiv}`}>
+                                <h3 className={`${style.overlayText}`}>Overlay Text</h3>    
+                            </div>  
+                            <img src="image2.jpg" alt="Image 1" className={`${style.projectImage}`}/> 
+                        </a>
+                    </Link>
+                </div>
+                <div className={`column is-4-desktop is-6-tablet is-12-mobile ${style.imageGrids}`}>
+                    <Link href='/jokes'>
+                        <a>
+                            <div className={`${style.overlayTextDiv}`}>
+                                <h3 className={`${style.overlayText}`}>Overlay Text</h3>    
+                            </div>  
+                            <img src="image1.jpg" alt="Image 1" className={`${style.projectImage}`}/> 
+                        </a>
+                    </Link>
+                </div>
+            </div>
+
+            
         </>
     )
 }
 
 
-{/* <div className={`columns is-multiline`}>
-
-<div className={`column is-7 is-hidden-mobile ${style.mainPadding}`}>
-    <div className={`columns is-multiline`}>
-        <div className={`column is-full ${style.helloText}`}>
-            <p>Hello.</p>
-        </div>
-        <div className={`column is-full ${style.iAmText}`}>
-            <p>I am Graham</p>
-        </div>
-        <div className={`column is-full is-full-mobile ${style.descriptionText}`}>
-            <p>
-                What&apos;s up! I&apos;m a developer and student out of Seattle, Washington. I&apos;m into working
-                on wild products and I&apos;ve spent my short career surrounded by them. I&apos;ve built a 
-                startup (unsuccesful) and worked at a pretty cool one (still succesful), so I&apos;ve gained
-                some great experience bringing products to life and making things happen. Looking for 
-                what&apos;s next!
-
-            </p>
-        </div>
-    </div>
-</div>
-
-<div className={`column is-7 is-hidden-tablet ${style.mainPadding}`}>
-    <div className={`columns is-multiline`}>
-        <div className={`column is-full ${style.helloTextMobile}`}>
-            <p>Hello.</p>
-        </div>
-        <div className={`column is-full ${style.iAmTextMobile}`}>
-            <p>I am Graham</p>
-        </div>
-        {/* <div className={`column is-full ${style.grahamMobile}`}>
-            <p>Graham</p>
-        </div> */}
-//         <div className={`column is-full is-full-mobile ${style.descriptionTextMobile}`}>
-//             <p>
-//                 What&apos;s up! I&apos;m a developer and student out of Seattle, Washington. I&apos;m into working
-//                 on wild products and I&apos;ve spent my short career surrounded by them. I&apos;ve built a 
-//                 startup (unsuccesful) and worked at a pretty cool one (still succesful), so I&apos;ve gained
-//                 some great experience bringing products to life and making things happen. Looking for 
-//                 what&apos;s next!
-
-//             </p>
-//         </div>
-//     </div>
-// </div>
+{/* <Grid container spacing={0} className={`${style.imageGrids}`} >
+<Grid item xs={4} className={`${style.imageGrids}`}>
+    <img src="image1.jpg" alt="Image 1" style={{ width: '100%' }} />
+</Grid>
+<Grid item xs={4} className={`${style.imageGrids}`}>
+    <img src="image2.jpg" alt="Image 2" style={{ width: '100%' }} />
+</Grid>
+<Grid item xs={4} className={`${style.imageGrids}`}>
+    <img src="image3.jpg" alt="Image 3" style={{ width: '100%' }} />
+</Grid>
+<Grid item xs={4}>
+    <img src="image4.jpg" alt="Image 4" style={{ width: '100%' }} />
+</Grid>
+<Grid item xs={4}>
+    <img src="image5.jpg" alt="Image 5" style={{ width: '100%' }} />
+</Grid>
+<Grid item xs={4}>
+    <img src="image6.jpg" alt="Image 6" style={{ width: '100%' }} />
+</Grid>
+</Grid> */}
 
 
-
-
-// <div className={`column is-5-desktop ${style.imageMargin}`}>
-//         {/* <figure className={`image is-2by3 ${style.imageMargin}`}> */}
-//             <img src="person_image.jpg" className={`${style.imageDiv}`}/>
-//         {/* </figure>   */}
-// </div>
-
-
-// </div> */}
