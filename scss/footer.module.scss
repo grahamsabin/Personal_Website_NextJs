@@ -1,0 +1,29 @@
+@import './colors.scss';
+
+
+.footer {
+    background-color: $app-dark-gray;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-top: 15vh;
+}
+
+.footerTitles {
+    color: $app-white;
+    margin-bottom: 1.5vh;
+    font-weight: bold;
+    font-size: 5;
+}
+
+.linkStack {
+    // display: flex;
+    // align-items: center;
+    
+}
+
+.footerBody {
+    color: $app-gray;
+    padding-bottom: 3vh;
+}
