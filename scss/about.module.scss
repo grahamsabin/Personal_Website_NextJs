@@ -1,5 +1,6 @@
 @import './colors.scss';
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
 .pageSetup {
     padding-left: 5vw;
@@ -9,10 +10,11 @@
 }
 
 .headerText {
-    font-family: 'Domine', serif;
+    font-family: 'Playfair Display', serif;
+    //font-family: 'Domine', serif;
     // font-family: 'Times New Roman', Times, serif;
-    font-size: 6.5vh;
-    font-weight: bold;
+    font-size: 7vh;
+    //font-weight: bold;
     color: $app-black; 
     margin-bottom: -5vh;
 }

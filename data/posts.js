@@ -2,13 +2,13 @@ const posts = [
     {
         id: 1,
         title: "Random Blog TItle",
-        publishedDate: "2023-12-05",
+        publishedDate: "January 5th, 2021",
         author: "Graham Sabin",
         coverImage: "",
         excerpt: 
             "In todays news, we will be straight up chilklers writing this blog post thing to make it dope as shit.",
         content:
-            "My entire blog is written right here",
+            "My entire blog is  right here",
         slug:"random-blog-title", 
     },
     {

@@ -1,11 +1,17 @@
 import { getAllPosts } from "../data/posts"
 import Link from "next/link";
+import style from "../scss/writing.module.scss"
+import { FaTwitter, FaEnvelope, FaLinkedin, FaInstagram, FaFacebook, FaArrowRight } from 'react-icons/fa';
 
 export default function Writing () {
     const posts = getAllPosts();
     return (
-        <div>
-            <div>This is my writing page, I'll do an intro at some point</div>
+        <div className={`${style.pageStyle}`}>
+            <div className={`${style.topBar}`}>
+                <FaArrowRight size={20} icon="fa-solid fa-arrow-right" className={`${style.rightArrow}`}></FaArrowRight>
+                <h1 className={`${style.featured}`}>First Draft Blog</h1>
+                <div className={`${style.divideBar}`}></div>
+            </div>
             <div>
                 {posts.map((p) => (
                     <BlogPostPreview key={p.id} data={p} />
@@ -20,18 +26,19 @@ export default function Writing () {
 const BlogPostPreview = (props) => {
     const {data} = props;
     return (
-        <div>
+        <div className={`${style.blogPreview}`}>
             {/* <img></img> I didn't want an image but you can add it*/}
+            <p className={`${style.date}`}>{data.publishedDate}</p>
             <h2>
                 <Link href={`/blog/${data.slug}`}>
-                    <a>{data.title}</a>
+                    <a className={`${style.titles}`}>{data.title}</a>
                 </Link>
             </h2>
-            <div>{data.publishedDate}</div>
-            <p>
+            <p className={`${style.excerpt}`}>
                 {data.excerpt}
             </p>
-            <div>{data.author}</div>
+            <div className={`${style.divideBar}`}></div>
+
         </div>
 
     )
